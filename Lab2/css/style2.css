@@ -1,0 +1,34 @@
+body {
+    background-color: lightgray;
+    color: rgb(58, 58, 58);
+}
+
+a {
+    color: brown;
+}
+
+.p1 {
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+}
+
+.p2, li {
+    font-style: italic;
+}
+
+.last-word {
+    color: blue;
+}
+
+
+.image_left{
+    float: left;
+    height: 50%;
+    width: 50%;
+}
+
+.image_right{
+    float: right;
+    height: 50%;
+    width: 50%;
+}

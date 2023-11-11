@@ -1,0 +1,11 @@
+:root {
+  --header-bg-color: rgba(33, 37, 41, 1);
+  --secondary-bg-color: rgba(217, 217, 217, 1);
+  --menu-bg-color: rgba(33, 37, 41, 1);
+  --main-bg-color: rgba(240, 248, 255, 1);
+  --separator-color: rgba(245, 245, 245, 1);
+  --white-text-color: rgba(255, 255, 255, 1);
+  --black-text-color: rgba(0, 0, 0, 1);
+  --content-bg-color: rgba(245, 245, 245, 1);
+  --primary-font: 'Open Sans', sans-serif;
+}

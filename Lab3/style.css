@@ -1,0 +1,154 @@
+@import 'variables.css';
+
+body {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+  width: 1440px;
+  height: 1024px;
+  position: absolute;
+  border-radius: 10px;
+}
+.header {
+  background-color: var(--header-bg-color);
+  width: 1140px;
+  height: 60px;
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+.header-bg {
+  background-color: var(--secondary-bg-color);
+  width: 220px;
+  height: 35px;
+  position: absolute;
+  left: 800px;
+  top: 13px;
+  border-radius: 4px;
+}
+.left-menu {
+  background-color: var(--menu-bg-color);
+  width: 300px;
+  height: 1030px;
+  position: absolute;
+  left: 0;
+  top: -6px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.user-photo {
+  border-radius: 500px;
+  background-color: var(--secondary-bg-color);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 30px;
+  top: 906px;
+}
+.user-name {
+  color: var(--white-text-color);
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  left: 100px;
+  top: 906px;
+  font-size: 24px;
+  letter-spacing: 0;
+}
+.separator-line {
+  background-color: var(--separator-color);
+  width: 200px;
+  height: 0;
+  position: absolute;
+  left: 30px;
+  top: 886px;
+  border: 2px solid var(--separator-color);
+}
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 160px 0 0 35px;
+}
+.menu-item {
+  color: var(--white-text-color);
+  font-size: 36px;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+.menu-item:hover {
+  font-size: 40px;
+  font-style: bold;
+}
+.footer {
+  background-color: var(--header-bg-color);
+  width: 1140px;
+  height: 50px;
+  position: absolute;
+  left: 300px;
+  top: 974px;
+}
+.footer-icon {
+  width: 60px;
+  height: 29px;
+  position: absolute;
+  left: 558px;
+  top: 10px;
+  background-image: url("images/futer_icons.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content-wrapper {
+  background-color: var(--content-bg-color);
+  border-radius: 20px;
+  position: absolute;
+  left: 370px;
+  border: 3px solid var(--black-text-color);
+}
+.content-1 {
+  width: 1000px;
+  height: 585px;
+  top: 100px;
+}
+.content-2 {
+  width: 1000px;
+  height: 220px;
+  top: 705px;
+}
+.img-container {
+  width: 307px;
+  height: 415px;
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  border-radius: 2px;
+  background-image: url("images/image_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid var(--black-text-color);
+}
+.content-text {
+  color: var(--black-text-color);
+  font-size: 20px;
+  letter-spacing: 0;
+}
+.content-1 .content-text {
+  width: 637px;
+  height: 557px;
+  position: absolute;
+  left: 339px;
+  top: 13px;
+}
+.content-2 .content-text {
+  width: 952px;
+  height: 190px;
+  position: absolute;
+  left: 22px;
+  top: 15px;
+}

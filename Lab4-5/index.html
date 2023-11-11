@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XBox</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- <header class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-inverse">
+        <a class="navbar-brand ps-5" href="#">
+          <img class="img-fluid" src="img/xbox-logo.svg" alt="Xbox Logo" />
+        </a>
+        <div class="navbar-collapse d-flex justify-content-end xbox-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Consoles <img class="img-fluid" src="img/down-arrow.svg"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Games <img class="img-fluid" src="img/down-arrow.svg" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <input
+                class="xbox-menu-input form-control"
+                type="text"
+                placeholder="Search"
+              />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img class="img-fluid" src="img/user-icon.svg" />
+                My Xbox
+                <img class="img-fluid" src="img/down-arrow.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header> -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="img/xbox-logo.svg" alt="Xbox Logo" />
+          </a>
+          <button
+            class="navbar-toggler me-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="consolesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Consoles
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="consolesDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">XBox Sires X</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">XBox Sires S</a></li>
+                  <li><a class="dropdown-item" href="#">XBox One</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="gamesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Games
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="gamesDropdown">
+                  <li><a class="dropdown-item" href="#">Game 1</a></li>
+                  <li><a class="dropdown-item" href="#">Game 2</a></li>
+                  <li><a class="dropdown-item" href="#">Game 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item">
+                <input
+                  class="xbox-menu-input form-control"
+                  type="text"
+                  placeholder="Search"
+                />
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="myXboxDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img class="img-fluid" src="img/user-icon.svg" /> My Xbox
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="myXboxDropdown">
+                  <li><a class="dropdown-item" href="#">Item 1</a></li>
+                  <li><a class="dropdown-item" href="#">Item 2</a></li>
+                  <li><a class="dropdown-item" href="#">Item 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="xbox-home-page-star-wars container-fluid position-relative">
+      <article
+        class="container d-flex justify-content-end align-items-center h-75"
+      >
+        <div class="row d-flex">
+          <div class="col-8 w-100">
+            <h1 class="text-white">Star Wars</h1>
+            <h5 class="text-white">Battlefront II</h5>
+            <div class="row h-100"></div>
+            <div class="row mt-4">
+              <div class="col-md-12 d-flex">
+                <div class="btn btn-primary me-2 xbox-button">
+                  Watch Trailer
+                </div>
+                <div class="btn btn-primary xbox-button gray-gradient">
+                  Explore Game
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <img
+        src="img/slider-button.svg"
+        class="position-absolute bottom-50 end-0 me-3"
+      />
+      <img
+        src="img/slider-button.svg"
+        style="transform: scaleX(-1)"
+        class="position-absolute bottom-50 start-0 ms-3"
+      />
+      <div class="position-absolute bottom-0 start-50 mb-4">
+        <span class="dot me-2"></span>
+        <span class="dot bg-transparent me-2"></span>
+        <span class="dot bg-transparent"></span>
+      </div>
+    </section>
+
+    <section class="xbox-home-page-highlights-section container-fluid">
+      <article
+        class="container d-flex justify-content-center position-relative"
+      >
+        <div class="row">
+          <div class="col-12 text-center mb-3 d-none d-md-block">
+            <img src="img/xbox-logo-white.svg" />
+          </div>
+          <div class="col-12 text-center mb-4 d-none d-md-block">
+            <h1 class="text-center">The best value</h1>
+            <h3 class="text-center">in games and entertainment</h3>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-auto">
+              <div class="xbox-home-page-card">
+                <img src="img/card-images/xboxonex.png" />
+                <div class="p-3">
+                  <h5>XBOX ONE X</h5>
+                  <h3>Faster Processing Smoother Gameplay</h3>
+                </div>
+
+                <div
+                  class="position-absolute bottom-0 mb-3 start-50 translate-middle-x text-center w-100"
+                >
+                  <div class="btn btn-primary xbox-button">
+                    Explore Consoles & Accessories
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-none d-md-block">
+              <div class="xbox-home-page-card">
+                <img src="img/card-images/mixer-logo.png" />
+                <div class="p-3">
+                  <h5>mixer Streaming</h5>
+                  <h3>The Next Generation Of Life Game Streaming</h3>
+                </div>
+                <div
+                  class="position-absolute bottom-0 mb-3 start-50 translate-middle-x text-center w-100"
+                >
+                  <div class="btn btn-primary xbox-button">
+                    Start Watching mixer
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <div class="xbox-home-page-card">
+                <img src="img/card-images/games_with_gold.png" />
+                <div class="p-3">
+                  <h5>Free Games Every Month</h5>
+                  <h3>Get up to $700 in free games</h3>
+                </div>
+                <div
+                  class="position-absolute bottom-0 mb-3 start-50 translate-middle-x text-center w-100"
+                >
+                  <div class="btn btn-primary xbox-button">Get Free Games</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="img/slider-button.svg"
+          class="position-absolute bottom-50 end-0 me-3 d-block d-xl-none"
+        />
+      </article>
+    </section>
+
+    <section class="xbox-home-page-design-lab-section container-fluid">
+      <article class="container d-flex align-items-center">
+        <div class="row">
+          <div class="col-8 offset-lg-1">
+            <h1 class="text-white">Xbox Design Lab</h1>
+            <h5 class="text-white">
+              Make yours one in a billion with new colors, metallic finishes,
+              and rubberized grips.
+            </h5>
+            <div class="row mt-4">
+              <div class="col-md-12 d-flex">
+                <div class="btn btn-primary me-2 xbox-button gray-gradient">
+                  Design Yours
+                </div>
+                <div class="btn btn-primary xbox-button">
+                  Explore Consoles & Accessories
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <div class="container xbox-footer-text">
+        <section class="row container">
+          <div class="col-3 offset-1">
+            <span class="row xbox-footer-text-green mb-3 mt-3">XBOX</span>
+            <span class="row mb-3">Support</span>
+            <span class="row mb-3">Contact us</span>
+            <span class="row mb-3">Privacy &amp; cookies</span>
+            <span class="row mb-3"> Terms of use </span>
+          </div>
+          <div class="col-3">
+            <span class="row xbox-footer-text-green mb-3 mt-3">Developers</span>
+            <span class="row mb-3">Games</span>
+            <span class="row mb-3">Windows 10</span>
+            <span class="row mb-3">Creators Program </span>
+            <span class="row mb-3">Designed for XBOX</span>
+          </div>
+
+          <div class="col-3">
+            <span class="row xbox-footer-text-green mb-3 mt-3">Follow Us</span>
+            <div class="row">
+              <div class="col-12">
+                <a href="https://www.facebook.com/">
+                  <i class="fab fa-facebook-f xbox-footer-text-green me-3"></i>
+                </a>
+                <a href="https://twitter.com/">
+                  <i class="fab fa-twitter xbox-footer-text-green me-3"></i>
+                </a>
+                <a href="https://github.com/">
+                  <i class="fab fa-github xbox-footer-text-green me-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="separator-line my-3"></div>
+        <section class="row mb-3">
+          <span class="col-8 text-start mb-3">English (United States) </span>
+          <span class="col-4 text-end mb-3">© Microsoft 2017</span>
+        </section>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

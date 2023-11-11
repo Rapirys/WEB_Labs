@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Варіант №10(2)</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <h1>Ротань Кирило Павлович</h1>
+    <h2>КН-31</h2>
+    <h2>Варіант №10</h2>
+    <a href="index.html">На головну</a>
+  </header>
+
+  <h2>Опис завдань відповідно до варіанту:</h2>
+  Необхідно розробити форму для реєстрації студента у веб-системі.
+  Необхідно заповнити наступні данні:
+  основні дані про студента, включають ПІБ, назву групи
+  (вибирається із списку), форму навчання(бюджет або контакт) реалізується у
+  вигляді перемикача, коротку інформацію про студента, електрона адреса
+  студента;
+  особисті дані студента, включають дані паспорта, ідентифікаційний
+  код, рік народження, стать (реалізується у вигляді перемикача).
+  <!-- Вставте вашу форму тут -->
+
+  <form>
+    <fieldset>
+      <legend>Основні дані:</legend>
+      <label for="fullname">ПІБ:</label>
+      <input type="text" id="fullname" name="fullname" required><br>
+
+      <label for="group">Група:</label>
+      <select id="group" name="group">
+        <option value="group1">Група 1</option>
+        <option value="group2">Група 2</option>
+        <option value="group3">Група 3</option>
+      </select><br>
+
+      <label>Форма навчання:</label>
+      <input type="radio" id="budget" name="tuition" value="budget" checked>
+      <label for="budget">Бюджет</label>
+      <input type="radio" id="contract" name="tuition" value="contract">
+      <label for="contract">Контракт</label><br>
+
+      <label for="info">Коротка інформація про студента:</label><br>
+      <textarea id="info" name="info" rows="4" cols="50"></textarea><br>
+
+      <label for="email">Електрона адреса:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Особисті дані:</legend>
+      <label for="passport">Дані паспорта:</label>
+      <input type="text" id="passport" name="passport" required><br>
+
+      <label for="idcode">Ідентифікаційний код:</label>
+      <input type="number" id="idcode" name="idcode" min="1000000000" max="9999999999" required><br>
+
+      <label for="birthyear">Рік народження:</label>
+      <input type="number" id="birthyear" name="birthyear" min="1900" max="2100" required><br>
+
+      <label>Стать:</label>
+      <input type="radio" id="male" name="gender" value="male" checked>
+      <label for="male">Чоловіча</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Жіноча</label>
+    </fieldset>
+
+    <input type="submit" value="Зареєструватися">
+  </form>
+</body>
+</html>
