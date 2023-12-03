@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantastic Beasts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="app.component.css" />
+  </head>
+  <body>
+    <nav class="col-12 bg-dark text-white py-2" am-Header>
+      <div class="container d-flex justify-content-between">
+        <img src="../assets/img/logo.png" alt="Dragon Logo" am-Logo />
+        <form class="d-flex" am-Search>
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <main class="container-fluid" am-Main>
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark" am-Sider>
+        <div
+          class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white h-100"
+        >
+          <div class="d-flex flex-column h-100 w-100 overflow-auto">
+            <a
+              onclick="loadPage(event)"
+              href="#"
+              class="d-flex align-items-center"
+              am-MenuText
+            >
+              <span class="ms-2">Lab 5</span>
+            </a>
+          </div>
+          <hr />
+          <div class="dropdown pb-4 bg-dark" am-Profile>
+            <a
+              href="#"
+              class="d-flex align-items-center"
+              am-MenuText
+              aria-expanded="false"
+            >
+              <img
+                src="../assets/img/my-image.jpg"
+                alt="hugenerd"
+                width="40"
+                height="40"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-inline mx-1"
+                >Кирило <br />
+                Ротань</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="container h-100" am-Content>
+          <section class="col-12" am-Menu>
+            <h2 id="active-creature-name">Lab 5</h2>
+          </section>
+          <section>
+            <h5>Завдання до лабороторної роботи</h5>
+            Необхідно написати проект на фреймворку Angular, який визначає чи
+            потрапляє точка на координатній площині в задану область, чи ні,
+            відповідно до варіанту завдань, і містить HTML-сторінку, яка формує
+            дані для відправки їх на обробку.
+            <p>
+              <img src="../assets/img/Lab5V3.png" />
+            </p>
+          </section>
+          <div class="container">
+            <form (submit)="submitForm()">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="startX">Starting value of x</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="startX"
+                      [(ngModel)]="startX"
+                      name="startX"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="endX">End value of x</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="endX"
+                      [(ngModel)]="endX"
+                      name="endX"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="stepX">Step of change for x:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="stepX"
+                      [(ngModel)]="stepX"
+                      name="stepX"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="startY">Starting value of y:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="startY"
+                      [(ngModel)]="startY"
+                      name="startY"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="endY">End value of y:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="endY"
+                      [(ngModel)]="endY"
+                      name="endY"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="stepY">Step of change for y:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="stepY"
+                      [(ngModel)]="stepY"
+                      name="stepY"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="R">Radius:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  min="0"
+                  id="R"
+                  [(ngModel)]="radius"
+                  name="R"
+                  required
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" value="Submit" />
+            </form>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col" *ngFor="let x of xCoordinates">x: {{ x }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let resultRow of results">
+                <th scope="row">y: {{ resultRow.y }}</th>
+                <td
+                  *ngFor="let result of resultRow.results"
+                  [ngClass]="{
+                    inside: result.isInside,
+                    outside: !result.isInside
+                  }"
+                >
+                  {{ result.isInside ? "Inside" : "Outside" }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="col-12 bg-dark text-white d-flex justify-content-center align-items-center"
+      am-Footer
+    >
+      <a
+        href="https://github.com/Rapirys/WEB_Labs"
+        target="_blank"
+        class="mx-2 text-white"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    <link rel="script" href="js/code.js" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
