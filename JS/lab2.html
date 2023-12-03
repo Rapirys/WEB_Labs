@@ -1,0 +1,33 @@
+<section class="col-12" am-Menu>
+  <h2 id="active-creature-name">Lab 2</h2>
+</section>
+
+<section>
+  <h5>Завдання 1</h5>
+  <p>На Вашій сторінці є кнопка. При наведенні на неї вивести текст.</p>
+  <div class="btn btn-primary m-2" id="hoverButton">Наведи на мене.</div>
+  <div id="displayText">!!!!! !!! !!!!!!!.</div>
+</section>
+
+<section>
+  <h5>Завдання 2</h5>
+  <p>
+    Ввести групу (з клавіатури), прізвище студента та курс (поля вводу). Якщо
+    неправильно вказано курс (перша цифра номеру групи), вивести попередження,
+    інакше вивести ім’я студента.
+  </p>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" id="group" class="form-control mb-3" placeholder="Номер групи" pattern="^\D+-\d+$">
+      <input type="text" id="surname" class="form-control mb-3" placeholder="Прізвище студента">
+      <input type="text" id="course" class="form-control mb-3" placeholder="Курс">
+      <button type="button" class="btn btn-primary mb-3" onclick="checkCourse()">Перевірити</button>
+    </div>
+  </div>
+  <div id="result">111 </div>
+</div>
+
+</section>
+
+<script src="js/lab2.js"></script>

@@ -1,0 +1,49 @@
+<section class="col-12" am-Menu>
+  <h2 id="active-creature-name">Lab 3</h2>
+</section>
+<section>
+  <h5>Завдання 1</h5>
+  <p>
+    У поле вводу вводиться країна і натискається Enter. При натисканні на Enter
+    зробіть так, щоб введені країни записувалися в абзац під поле вводу через
+    кому. Тобто по кожному натискання Enter в абзац будуть додаватися все нові і
+    нові країни.
+  </p>
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input
+        type="text"
+        class="form-control mb-3"
+        id="countryInput"
+        placeholder="Назва країни."
+        onkeydown="addCountry(event)"
+      />
+    </div>
+  </div>
+  <p id="country_list">Україна.</p>
+</section>
+<section>
+  <h5>Завдання 2</h5>
+  <p>
+    Дана таблиця. При натисканні на комірку в ній з'являється поле введення з
+    вмістом цієї комірки і кнопка "зберегти". Можна редагувати текст в полі,
+    зберегти - і текст комірки зміниться на той, що був в полі введення.
+  </p>
+  <table class="mb-3">
+    <tbody id = "table-lab-3">
+      <tr><td></td><td></td><td></td><td></td>
+      <tr><td></td><td></td><td></td><td></td>
+      <tr><td></td><td></td><td></td><td></td>
+      <tr><td></td><td></td><td></td><td></td>
+    </tbody>
+  </table>
+
+  <input
+        type="text"
+        class="form-control mb-3"
+        id="cellInput"
+        onkeydown="addTextToCell(event)"
+      />
+</section>
+
+<script src="js/lab3.js"></script>
